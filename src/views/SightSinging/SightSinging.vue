@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import MainLayout from './components/Layout/MainLayout.vue'
+defineProps<{
+  msg?: string
+}>()
 </script>
 
 <template>
-  <MainLayout />
+  <div>视唱</div>
 </template>
 
 <style scoped></style>
