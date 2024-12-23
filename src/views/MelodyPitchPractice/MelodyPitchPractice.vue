@@ -81,10 +81,10 @@ const handleBottom = () => {
 
 <template>
   <div class="MelodyPitchPractice">
-    <el-card header="旋律音程高低判断">
+    <ElCard header="旋律音程高低判断">
       <div class="buttons-wrapper">
-        <el-button icon="Refresh" size="large" circle @click="handleRefresh" />
-        <el-button
+        <ElButton icon="Refresh" size="large" circle @click="handleRefresh" />
+        <ElButton
           icon="VideoPlay"
           size="large"
           circle
@@ -93,7 +93,7 @@ const handleBottom = () => {
           @click="handlePlay"
         />
         <div class="arrows-wrapper">
-          <el-button
+          <ElButton
             color="#126e82"
             icon="Top"
             size="large"
@@ -101,7 +101,7 @@ const handleBottom = () => {
             :disabled="!isExistPitches"
             @click="handleTop"
           />
-          <el-button
+          <ElButton
             class="bottom-button"
             color="#c1651a"
             icon="Bottom"
@@ -112,7 +112,7 @@ const handleBottom = () => {
           />
         </div>
       </div>
-    </el-card>
+    </ElCard>
   </div>
 </template>
 

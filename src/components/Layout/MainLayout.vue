@@ -5,35 +5,35 @@ const route = useRoute()
 </script>
 
 <template>
-  <el-container class="MainLayout">
-    <el-aside width="200px">
-      <el-scrollbar>
-        <el-menu
+  <ElContainer class="MainLayout">
+    <ElAside width="200px">
+      <ElScrollbar>
+        <ElMenu
+          router
           class="menu"
           active-text-color="#ffd04b"
           background-color="#545c64"
           text-color="#fff"
-          router
           :default-active="route.path"
         >
-          <el-menu-item index="/SightSinging">
+          <ElMenuItem index="/SightSinging">
             <el-icon><icon-menu /></el-icon>
             <span>视唱</span>
-          </el-menu-item>
-          <el-menu-item index="/MelodyPitchPractice">
+          </ElMenuItem>
+          <ElMenuItem index="/MelodyPitchPractice">
             <el-icon><icon-menu /></el-icon>
             <span>旋律音程高低判断</span>
-          </el-menu-item>
-        </el-menu>
-      </el-scrollbar>
-    </el-aside>
-    <el-container>
-      <el-header class="header">
-        <span class="logo">TOM的工具箱 </span>
-      </el-header>
-      <el-main><RouterView /></el-main>
-    </el-container>
-  </el-container>
+          </ElMenuItem>
+        </ElMenu>
+      </ElScrollbar>
+    </ElAside>
+    <ElContainer>
+      <ElHeader class="header">
+        <span class="logo">TOM的工具箱</span>
+      </ElHeader>
+      <ElMain><RouterView /></ElMain>
+    </ElContainer>
+  </ElContainer>
 </template>
 
 <style scoped lang="scss">
